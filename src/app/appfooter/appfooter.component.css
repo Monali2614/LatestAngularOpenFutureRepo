@@ -1,0 +1,192 @@
+/* Reset default styles for better control */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+ 
+ 
+/* Social Media Icon Styling */
+.social-media a {
+  color: white; /* Set icon color to white */
+  font-size: 30px; /* Adjust the size of the icon */
+  margin-right: 10px; /* Add margin between icons */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+ 
+/* Hover Effect for Social Media Icons */
+.social-media a:hover {
+  color: #ccc; /* Change color on hover, you can adjust the color to your preference */
+}
+ 
+/* Base Footer Styling */
+.footer {
+  padding: 1rem;
+  color: white;
+  background-image: url('src/assets/Recruitment Fraud Alert/product-bg (2).jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+ 
+/* Footer Section */
+.footer-section {
+ 
+ 
+  color: white;
+}
+ 
+/* Footer Links and Copyright */
+.copyright {
+  font-size: 0.8rem;
+text-align: center;
+}
+ 
+.footer-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center; /* Center footer links */
+}
+ 
+.footer-links li {
+  margin-right: 12px;
+}
+ 
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: text-decoration 0.3s;
+  white-space: nowrap;
+}
+ 
+.footer-links a:hover {
+  text-decoration: underline;
+}
+ 
+/* Footer Container */
+ 
+ 
+/* Logo Section */
+.logo-section img {
+  width: 180px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+ 
+/* Headings */
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+ 
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+li {
+  margin-bottom: 0px;
+}
+ 
+/* Link Styles */
+li a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+ 
+/* Hover Effect */
+li a:hover {
+  transform: translateX(5px);
+  color: white;
+}
+ 
+ 
+ 
+@media (max-width: 768px) {
+  /* Stack items vertically on small screens */
+  /* .footer-container {
+ 
+  } */
+ 
+  /* Center footer section and copyright */
+  .footer-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+ 
+  .footer-links {
+      justify-content: center;
+      margin-top: 30px;
+  }
+ 
+  /* Adjust links for small screens */
+  .footer-links li {
+      margin-bottom: 10px;
+  }
+ 
+  /* Reduce font size for copyright */
+  .copyright {
+ 
+      font-size: 0.75rem;
+  }
+ 
+ 
+  /* Adjust the social media icons */
+  .social-media a {
+      font-size: 25px; /* Slightly smaller icons for small screens */
+      margin-right: 10px;
+  }
+}
+ 
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+ 
+  .footer-links a {
+      font-size: 0.8rem; /* Adjust link size for very small screens */
+  }
+ 
+  /* Social media icon size adjustment */
+  .social-media a {
+      font-size: 40px;
+  }
+}
+ 
+.footer-section hr {
+  border: none;
+  border-top: 2px solid rgb(247, 238, 238); /* Make the line thicker and white */
+  margin: 20px 0; /* Add spacing above and below */
+  width: 100%; /* Ensure the line spans the full width */
+  opacity: 0.8; /* Slight transparency for a softer look */
+}
+ 
+ 
+ 
+p {
+  font-size: 17px;
+  color: #fcf5f5;
+  font-family: Arial, sans-serif;
+}
+ 
+a {
+  color: #e8ecf0;
+  text-decoration: none;
+}
+ 
+ 

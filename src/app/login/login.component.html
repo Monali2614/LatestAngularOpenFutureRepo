@@ -1,0 +1,63 @@
+<div class="full-container">
+  <!-- Left Section -->
+  <div class="left-section">
+    <h2>Welcome Back</h2>
+    <p>Login to continue accessing your dashboard</p>
+    <div class="illustration"></div>
+  </div>
+ 
+  <!-- Right Section -->
+  <div class="right-section">
+    <!-- Close Button -->
+ 
+     <a href="">
+    <button class="close-btn" >&#10006;</button>
+     </a>
+ 
+    <!-- Form Heading -->
+    <h2> Admin Login</h2>
+ 
+    <!-- Form Container -->
+    <form (ngSubmit)="onLogin()" [formGroup]="loginForm">
+      <!-- Username Field -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          formControlName="username"
+          placeholder="Enter your username"
+          required
+        />
+      </div>
+ 
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input [type]="showPassword ? 'text' : 'password'" id="password" formControlName="password" placeholder="Enter your password" required />
+ 
+        <span class="password-toggle-icon" (click)="togglePasswordVisibility()">
+          <img
+            width="25"
+            height="25"
+            src="https://img.icons8.com/ios/50/visible--v1.png"
+            alt="visible--v1"
+          />
+        </span>
+ 
+    </div>
+ 
+      <!-- Submit Button -->
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
+ 
+      <!-- Error Message -->
+      <div class="error" *ngIf="loginError">{{ errorMessage }}</div>
+ 
+      <!-- Forgot Password Link -->
+      <!-- <div class="login-link">
+        <a href="#">Forgot your password?</a>
+      </div> -->
+    </form>
+  </div>
+</div>
+ 

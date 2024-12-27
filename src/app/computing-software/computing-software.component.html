@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/Industries/Computing Software.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+ 
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>COMPUTING SOFTWARE</h1>
+    <p><b>Industries > Computing Software</b></p>
+  </div>
+</div>
+ 
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Computing Software</h2>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1 class="fw-bold" style="color: #004e92;">Optimizing Technology Convergence</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we specialize in developing
+      cutting-edge computing software solutions that drive efficiency and
+      innovation across industries.
+    </p>
+    <p>
+      Our team of experts harnesses the latest technologies to create tailored
+      software that meets the unique needs of your business, empowering you to
+      achieve your strategic goals.
+    </p>
+  </div>
+</div>
+ 
+<div class="sap-offerings-container">
+  <h1 class="sap-heading" style="color: #004e92;">Computing Software Offerings</h1>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of computingsoftware">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

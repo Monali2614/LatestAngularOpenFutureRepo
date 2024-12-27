@@ -1,0 +1,121 @@
+.item {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.title {
+  width: auto;
+  position: absolute;
+  bottom: 0%;
+  right: -2%;
+  width: 80%;
+  background: #ffffff;
+  border-radius: 8px 0 8px 0;
+  transition: all 0.45s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease-in-out, visibility 0.35s ease-in-out;
+  z-index: 1;
+  color: white;
+}
+
+.choose-us-style-two:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  border-radius: 10px;
+}
+
+.item:hover .title {
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+
+}
+
+.overlay .content .circle img {
+  width: 50px;
+  height: 50px;
+}
+
+.overlay .content a {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.overlay .content p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.text-theme {
+  color: rgba(2, 33, 143, 1);
+}
+
+.our-service-body{
+  background-image: url('../../assets/SERVICES/our-serices-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.imgbot
+{
+width: 30px;
+}
